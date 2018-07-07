@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Suite A">
+
+<listeners>  
+		     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+</listeners>
+ 
+<test name="Test - InvalidLogin">
+    <classes>
+        <class name="com.testproject.suiteA.InvalidLogin" ></class>  
+    </classes>
+</test>
+
+<test name="Test - LoginOrion">
+    <classes>
+        <class name="com.testproject.suiteA.LoginOrion" ></class>  
+    </classes>
+</test>
+
+
+</suite>

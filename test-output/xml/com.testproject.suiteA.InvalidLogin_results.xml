@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test InvalidLogin"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="2"
+           time="12.739">
+  <properties />
+  
+            <testcase name="InvalidLoginOrion" time="0.0" classname="com.testproject.suiteA.InvalidLogin">
+          <skipped />
+    </testcase>
+            <testcase name="InvalidLoginOrion" time="0.0" classname="com.testproject.suiteA.InvalidLogin">
+          <skipped />
+    </testcase>
+  
+            <testcase name="InvalidLoginOrion" time="12.736" classname="com.testproject.suiteA.InvalidLogin" />
+      
+</testsuite>

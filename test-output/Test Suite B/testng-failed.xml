@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suite B]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="Test - Apply Leave">
+    <classes>
+      <class name="com.testproject.suiteB.ApplyLeave"/>
+    </classes>
+  </test> <!-- Test - Apply Leave -->
+  <test name="Test - Apply Leave(failed)">
+    <classes>
+      <class name="com.testproject.suiteB.ApplyLeave">
+        <methods>
+          <include name="checkSuiteSkip"/>
+          <include name="checkTestSkip"/>
+          <include name="LeaveRequest"/>
+        </methods>
+      </class> <!-- com.testproject.suiteB.ApplyLeave -->
+    </classes>
+  </test> <!-- Test - Apply Leave(failed) -->
+</suite> <!-- Failed suite [Test Suite B] -->

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite A]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="Test InvalidLogin">
+    <classes>
+      <class name="com.testproject.suiteA.InvalidLogin"/>
+    </classes>
+  </test> <!-- Test InvalidLogin -->
+  <test name="Test LoginOrion">
+    <classes>
+      <class name="com.testproject.suiteA.LoginOrion"/>
+    </classes>
+  </test> <!-- Test LoginOrion -->
+  <test name="Test InvalidLogin(failed)">
+    <classes>
+      <class name="com.testproject.suiteA.LoginOrion">
+        <methods>
+          <include name="Aftermethod"/>
+          <include name="checkSuiteSkip"/>
+          <include name="SuiteExecution"/>
+          <include name="AfterTest"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.testproject.suiteA.LoginOrion -->
+      <class name="com.testproject.suiteA.InvalidLogin">
+        <methods>
+          <include name="Aftermethod"/>
+          <include name="AfterTest"/>
+          <include name="checkTestSkip"/>
+          <include name="InvalidLoginOrion" invocation-numbers="0 1 2"/>
+        </methods>
+      </class> <!-- com.testproject.suiteA.InvalidLogin -->
+    </classes>
+  </test> <!-- Test InvalidLogin(failed) -->
+  <test name="Test LoginOrion(failed)">
+    <classes>
+      <class name="com.testproject.suiteA.LoginOrion">
+        <methods>
+          <include name="LoginOrionTest" invocation-numbers="0 1"/>
+          <include name="Aftermethod"/>
+          <include name="checkSuiteSkip"/>
+          <include name="SuiteExecution"/>
+          <include name="AfterTest"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.testproject.suiteA.LoginOrion -->
+      <class name="com.testproject.suiteA.InvalidLogin">
+        <methods>
+          <include name="Aftermethod"/>
+          <include name="AfterTest"/>
+          <include name="checkTestSkip"/>
+        </methods>
+      </class> <!-- com.testproject.suiteA.InvalidLogin -->
+    </classes>
+  </test> <!-- Test LoginOrion(failed) -->
+</suite> <!-- Failed suite [Suite A] -->

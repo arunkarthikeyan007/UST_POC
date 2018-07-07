@@ -1,0 +1,13 @@
+<suite name="Master suite">
+
+<listeners>  
+		     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+</listeners>
+ 
+ 
+  <suite-files>
+   <suite-file path="./SuiteA.xml" />
+   <suite-file path="./SuiteB.xml" />
+   
+  </suite-files>
+</suite>

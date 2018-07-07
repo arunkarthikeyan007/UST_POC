@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ReportNG"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Selenium Library"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/TestngxsltReports"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Selenium latest"/>
+	<classpathentry kind="lib" path="D:/Study Materials/Attachments/selenium-firefox-driver-3.3.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/POI"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Log4j"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
